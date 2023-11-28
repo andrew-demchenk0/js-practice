@@ -13,6 +13,19 @@ body {
   color: #000000;
 }
 
+.fadeIn {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .status {
   display: block;
   color: red;
@@ -701,7 +714,7 @@ textarea:focus {
 }
 .numbers1 {
   display: block;
-  float: left;  
+  float: left;
   color: white;
   font-size: 40px;
   margin-right: 10px;
@@ -1053,17 +1066,12 @@ textarea:focus {
   background: url(../img/modal_calc/check.png) center center no-repeat;
 }
 
-.no-background {
-  background: url();
-}
-
 .checkbox-custom[id="warm"]::before {
   background: url(../img/modal_calc/check_warm.png) center center no-repeat;
 }
 
 .popup_calc_profile_content .label {
   padding: 1.3rem 2rem;
-  z-index: 18rem;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 500;
